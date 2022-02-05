@@ -94,8 +94,7 @@ header {
 
   &_txt {
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
+    @include flex;
   }
 
 
