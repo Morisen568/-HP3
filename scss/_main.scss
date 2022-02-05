@@ -1,0 +1,102 @@
+body {
+  font-family: 'Noto Serif JP', serif;
+}
+
+header {
+
+  nav {
+    display: flex;
+    float: right;
+  }
+
+  .header_all {
+    position: fixed;
+    right: 0;
+  }
+
+  ul {
+    display: flex;
+    position: relative;
+    z-index: 3;
+  }
+
+  li {
+    margin-right: 25px;
+  }
+}
+
+#top {
+
+}
+
+.top {
+
+  display: table;
+  width: 100vw;
+  height: 100vh;
+
+  &_boxString {
+    font-size: 120px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Pinyon Script', cursive;
+    line-height: 60px;
+    // color: white;
+
+    small {
+      font-size: 25px;
+        font-family: 'Noto Serif JP', serif;
+        // color: white;
+    }
+  }
+}
+
+
+#top2 {
+  background: url("../images/spring/haru.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.top2 {
+  display: table;
+  width: 100vw;
+  height: 100vh;
+
+
+  &_all {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 20;
+  }
+
+  &_box {
+    width: 376px;
+    height: 508px;
+    background-color: white;
+    z-index: 10;
+    opacity: 0.7;
+    margin-left: 5%;
+  }
+
+  &_ttl {
+    display: flex;
+    justify-content: center;
+    
+    strong {
+      margin-top: 60px;
+      font-family: 'Pinyon Script', cursive;
+      color: #8D8D8E;
+    }
+  }
+
+  &_txt {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+}
