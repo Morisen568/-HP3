@@ -208,8 +208,9 @@ header {
 }
 
 .btn {
-  width: 290px;
-  height: 70px;
+  display: inline-block;
+  // width: 290px;
+  // height: 70px;
   margin: 60px auto;
   border-top: solid 1px white;
   border-left: solid 1px white;
@@ -219,27 +220,25 @@ header {
   padding: 25px 88px 25px 88px;
   color: white;
   font-size: 20px;
-  background: rgba(0,0,0,0);
   z-index: 10;
 }
 
 .btn::before {
-  width: 100%;
-  height: 100%;
-  content: "";
-  background: linear-gradient(270deg, #339999 5%, #B384FF 50%, #8eb8ff 70%);
-    background-position: 1% 50%;
-    background-size: 350% auto;
-    transition: all 0.2s ease-out;
-    z-index: 10;
 }
 
 
+.btn:hover {
+  border: transparent;
+  opacity: 1;
+  background-color: linear-gradient(270deg, #339999 5%, #B384FF 50%, #8eb8ff 70%);
+    background-position: right center;
+    background-size: 350% auto;
+    transition: all 0.2s ease-out;
+  z-index: 10;
+}
+
 .btn:hover::after {
   background-position: 99% 50%;
-  border: none;
-  opacity: 1;
-  z-index: 10;
 }
 
 footer {
