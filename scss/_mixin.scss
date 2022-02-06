@@ -3,3 +3,7 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin cursive {
+  font-family: 'Pinyon Script', cursive;
+}

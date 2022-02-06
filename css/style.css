@@ -47,7 +47,7 @@ header li {
 }
 
 #top2 {
-  background: url("../images/spring/haru.jpg");
+  background: url("../images/spring/sakura.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -81,6 +81,7 @@ header li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 25px;
 }
 
 .top2_ttl strong {
@@ -90,6 +91,168 @@ header li {
 }
 
 .top2_txt {
+  font-size: 20px;
   margin-top: 50px;
-  @includebflex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#spring {
+  background: url(../images/spring/haru.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#summer {
+  background: url(../images/summer/summer.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#autumn {
+  background: url(../images/autumn/fall.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#winter {
+  background: url(../images/winter/fuyu.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.spring {
+  display: table;
+  width: 100vw;
+  height: 100vh;
+}
+
+.spring_all {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.spring_ttl {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 120px;
+  color: white;
+}
+
+.summer {
+  display: table;
+  width: 100vw;
+  height: 100vh;
+}
+
+.summer_all {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.summer_ttl {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 120px;
+  color: white;
+}
+
+.autumn {
+  display: table;
+  width: 100vw;
+  height: 100vh;
+}
+
+.autumn_all {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.autumn_ttl {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 120px;
+  color: white;
+}
+
+.winter {
+  display: table;
+  width: 100vw;
+  height: 100vh;
+}
+
+.winter_all {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.winter_ttl {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 120px;
+  color: white;
+}
+
+.btn_box {
+  margin-top: 60px;
+}
+
+.btn {
+  width: 290px;
+  height: 70px;
+  margin: 60px auto;
+  border-top: solid 1px white;
+  border-left: solid 1px white;
+  border-right: solid 1px white;
+  border-bottom: solid 1px white;
+  border-radius: 100vh;
+  padding: 25px 88px 25px 88px;
+  color: white;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0);
+  z-index: 10;
+}
+
+.btn::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: -webkit-gradient(linear, right top, left top, color-stop(5%, #339999), color-stop(50%, #B384FF), color-stop(70%, #8eb8ff));
+  background: linear-gradient(270deg, #339999 5%, #B384FF 50%, #8eb8ff 70%);
+  background-position: 1% 50%;
+  background-size: 350% auto;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  z-index: 10;
+}
+
+.btn:hover::after {
+  background-position: 99% 50%;
+  border: none;
+  opacity: 1;
+  z-index: 10;
+}
+
+footer {
+  z-index: 10;
+}
+
+.footer_txt {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: bottom;
+  position: absolute;
+  bottom: 0;
 }
