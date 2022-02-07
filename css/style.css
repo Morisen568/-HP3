@@ -46,6 +46,68 @@ header li {
   font-family: 'Noto Serif JP', serif;
 }
 
+.main_img {
+  z-index: 10;
+  opacity: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  -webkit-animation: anime 20s 0s infinite;
+  animation: anime 20s 0s infinite;
+}
+
+.main_img:nth-of-type(2) {
+  -webkit-animation-delay: 6s;
+  animation-delay: 5s;
+}
+
+.main_img:nth-of-type(3) {
+  -webkit-animation-delay: 12s;
+  animation-delay: 10s;
+}
+
+.main_img:nth-of-type(4) {
+  -webkit-animation-delay: 18s;
+  animation-delay: 15s;
+}
+
+@-webkit-keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 #top2 {
   background: url("../images/spring/sakura.jpg");
   background-size: cover;
@@ -221,11 +283,12 @@ header li {
 .btn:hover {
   border: transparent;
   opacity: 1;
-  background-color: linear-gradient(270deg, #339999 5%, #B384FF 50%, #8eb8ff 70%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(5%, #339999), color-stop(50%, #B384FF), color-stop(70%, #8eb8ff));
+  background: linear-gradient(270deg, #339999 5%, #B384FF 50%, #8eb8ff 70%);
   background-position: right center;
-  background-size: 350% auto;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  background-size: 200% auto;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   z-index: 10;
 }
 
@@ -234,6 +297,7 @@ header li {
 }
 
 footer {
+  margin-top: -100px;
   z-index: 10;
 }
 
@@ -247,5 +311,4 @@ footer {
           justify-content: center;
   vertical-align: bottom;
   position: absolute;
-  bottom: 0;
 }
