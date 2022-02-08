@@ -17,21 +17,22 @@ header {
   ul {
     display: flex;
     position: relative;
-    z-index: 3;
+    z-index: 1000;
   }
 
   li {
     margin-right: 25px;
+    z-index: 1000;
   }
 }
 
-#slider {
-  width: 100vw;
-  height: 100vh;
+#top {
+  
 }
 
 .top {
-
+  width: 100vw;
+  height: 100vh;
   display: table;
 
 
@@ -42,12 +43,12 @@ header {
     text-align: center;
     font-family: 'Pinyon Script', cursive;
     line-height: 60px;
-    // color: white;
+    color: white;
 
     small {
       font-size: 25px;
         font-family: 'Noto Serif JP', serif;
-        // color: white;
+        color: white;
     }
   }
 }
@@ -102,6 +103,8 @@ header {
   }
 
 }
+
+
 
 #spring {
   background: url(../images/spring/haru.jpg);
@@ -234,7 +237,7 @@ header {
   opacity: 1;
   background: linear-gradient(270deg, #339999 5%, #B384FF 50%, #8eb8ff 70%);
     background-position: right center;
-    background-size: 200% auto;
+    background-size: 250% auto;
     transition: all 0.5s ease-out;
   z-index: 10;
 }
@@ -244,7 +247,7 @@ header {
 }
 
 footer {
-  margin-top: -100px;
+  margin-top: -80px;
   z-index: 10;
 }
 
