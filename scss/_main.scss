@@ -12,6 +12,7 @@ header {
   .header_all {
     position: fixed;
     right: 0;
+    z-index: 1000;
   }
 
   ul {
@@ -22,7 +23,7 @@ header {
 
   li {
     margin-right: 25px;
-    z-index: 1000;
+
   }
 }
 

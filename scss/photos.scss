@@ -1,0 +1,137 @@
+@import "mixin";
+@import "color";
+
+header {
+
+  nav {
+    display: flex;
+    float: right;
+  }
+
+  .header_all {
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+  }
+
+  ul {
+    display: flex;
+    position: relative;
+    z-index: 1000;
+  }
+
+  li {
+    margin-right: 25px;
+
+  }
+}
+
+.photo_title {
+  font-size: 150px;
+  @include cursive;
+  padding-top: 120px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.spring_title {
+  font-size: 85px;
+  @include cursive;
+  color: $haru;
+  margin-left: 5%;
+  margin-bottom: 80px;
+}
+
+.slider {
+  width: 90%;
+  margin:0 auto 300px;
+
+  img {
+    width: 350px;
+    height: 310px;
+    object-fit: cover;
+    }
+}
+
+.spring_box {
+
+  width: 350px;
+  height: 150px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  box-shadow: 10px 10px 20px #ddd;
+
+  .haru_ttl {
+    margin-bottom: 50px;
+    margin-left: 10px;
+  }
+
+  .haru_txt {
+    margin-left: 10px;
+  }
+}
+
+
+.slider .slick-slide {
+  margin: 0 auto;
+}
+
+.slick-prev, .slick-next {
+  z-index: 1;
+  position: absolute;
+    top: 42%;
+    cursor: pointer;
+    outline: none;
+    border-top: 2px solid #666;
+    border-right: 2px solid #666;
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+.slick-dots {
+    text-align:center;
+	margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+	margin:0 5px;
+}
+
+.slick-dots button {
+  margin-top: 30px;
+    color: transparent;
+    outline: none;
+    width:8px;
+    height:8px;
+    display:block;
+    border-radius:50%;
+    background:#ccc;
+}
+
+.slick-dots .slick-active button{
+    background:#333;
+}
+
+footer {
+  margin-top: -80px;
+  z-index: 10;
+}
+
+.footer_txt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  vertical-align: bottom;
+  position: absolute;
+}

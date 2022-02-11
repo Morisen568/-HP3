@@ -1,0 +1,140 @@
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+}
+
+header .header_all {
+  position: fixed;
+  right: 0;
+  z-index: 1000;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 1000;
+}
+
+header li {
+  margin-right: 25px;
+}
+
+.photo_title {
+  font-size: 150px;
+  font-family: 'Pinyon Script', cursive;
+  padding-top: 120px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.spring_title {
+  font-size: 85px;
+  font-family: 'Pinyon Script', cursive;
+  color: #E3A4B4;
+  margin-left: 5%;
+  margin-bottom: 80px;
+}
+
+.slider {
+  width: 90%;
+  margin: 0 auto 300px;
+}
+
+.slider img {
+  width: 350px;
+  height: 310px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.spring_box {
+  width: 350px;
+  height: 150px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  -webkit-box-shadow: 10px 10px 20px #ddd;
+          box-shadow: 10px 10px 20px #ddd;
+}
+
+.spring_box .haru_ttl {
+  margin-bottom: 50px;
+  margin-left: 10px;
+}
+
+.spring_box .haru_txt {
+  margin-left: 10px;
+}
+
+.slider .slick-slide {
+  margin: 0 auto;
+}
+
+.slick-prev, .slick-next {
+  z-index: 1;
+  position: absolute;
+  top: 42%;
+  cursor: pointer;
+  outline: none;
+  border-top: 2px solid #666;
+  border-right: 2px solid #666;
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  left: -1.5%;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.slick-next {
+  right: -1.5%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  margin-top: 30px;
+  color: transparent;
+  outline: none;
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.slick-dots .slick-active button {
+  background: #333;
+}
+
+footer {
+  margin-top: -80px;
+  z-index: 10;
+}
+
+.footer_txt {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: bottom;
+  position: absolute;
+}
