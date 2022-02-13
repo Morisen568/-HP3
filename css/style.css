@@ -11,6 +11,7 @@ header nav {
 
 header .header_all {
   position: fixed;
+  margin-top: 1%;
   right: 0;
   z-index: 1000;
 }
@@ -252,4 +253,13 @@ footer {
           justify-content: center;
   vertical-align: bottom;
   position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .header_all {
+    margin-top: 2%;
+  }
+  .top2_box {
+    margin: 0 auto 0 auto;
+  }
 }

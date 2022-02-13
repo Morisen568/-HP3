@@ -1,3 +1,7 @@
+body {
+  font-family: 'Noto Serif JP', serif;
+}
+
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7,6 +11,7 @@ header nav {
 
 header .header_all {
   position: fixed;
+  margin-top: 1%;
   right: 0;
   z-index: 1000;
 }
@@ -39,28 +44,59 @@ header li {
   margin-bottom: 80px;
 }
 
+.summer_title {
+  font-size: 85px;
+  font-family: 'Pinyon Script', cursive;
+  color: #F5A600;
+  margin-left: 5%;
+  margin-bottom: 80px;
+}
+
+.autumn_title {
+  font-size: 85px;
+  font-family: 'Pinyon Script', cursive;
+  color: #A7742D;
+  margin-left: 5%;
+  margin-bottom: 80px;
+}
+
+.winter_title {
+  font-size: 85px;
+  font-family: 'Pinyon Script', cursive;
+  color: #C1D3E9;
+  margin-left: 5%;
+  margin-bottom: 80px;
+}
+
 .slider {
   width: 90%;
-  margin: 0 auto 300px;
+  height: 500px;
+  margin: 0 auto 50px;
+}
+
+.slider li {
+  margin: 0 auto;
 }
 
 .slider img {
-  width: 350px;
+  width: 82%;
   height: 310px;
+  margin: 0 auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .spring_box {
-  width: 350px;
-  height: 150px;
+  width: 82%;
+  height: 140px;
+  margin: 0 auto 10px;
   padding-top: 10px;
-  padding-bottom: 30px;
   -webkit-box-shadow: 10px 10px 20px #ddd;
           box-shadow: 10px 10px 20px #ddd;
 }
 
 .spring_box .haru_ttl {
+  margin-top: 15px;
   margin-bottom: 50px;
   margin-left: 10px;
 }
@@ -70,7 +106,7 @@ header li {
 }
 
 .slider .slick-slide {
-  margin: 0 auto;
+  height: auto;
 }
 
 .slick-prev, .slick-next {
@@ -111,20 +147,34 @@ header li {
   margin-top: 30px;
   color: transparent;
   outline: none;
-  width: 8px;
-  height: 8px;
+  width: 16px;
+  height: 14px;
   display: block;
   border-radius: 50%;
   background: #ccc;
+  border: none;
 }
 
-.slick-dots .slick-active button {
-  background: #333;
+.slide_spring .slick-dots .slick-active button {
+  background: #E3A4B4;
+}
+
+.slide_summer .slick-dots .slick-active button {
+  background: #F5A600;
+}
+
+.slide_autumn .slick-dots .slick-active button {
+  background: #A7742D;
+}
+
+.slide_winter .slick-dots .slick-active button {
+  background: #C1D3E9;
 }
 
 footer {
   margin-top: -80px;
   z-index: 10;
+  padding-top: 300px;
 }
 
 .footer_txt {
@@ -137,4 +187,13 @@ footer {
           justify-content: center;
   vertical-align: bottom;
   position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .header_all {
+    margin-top: 2%;
+  }
+  .slider {
+    width: 60%;
+  }
 }

@@ -1,0 +1,201 @@
+@import "mixin";
+@import "color";
+
+body {
+  font-family: 'Noto Serif JP', serif;
+}
+
+header {
+
+  nav {
+    display: flex;
+    float: right;
+  }
+
+  .header_all {
+    position: fixed;
+    margin-top: 1%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  ul {
+    display: flex;
+    position: relative;
+    z-index: 1000;
+  }
+
+  li {
+    margin-right: 25px;
+
+  }
+}
+
+.blog {
+
+  &_title {
+    font-size: 120px;
+    @include cursive;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 5%;
+  }
+
+  &_item {
+    position: relative;
+    display: flex;
+    margin-bottom: 10%;
+  }
+
+  &_left {
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 15%;
+    z-index: 2;
+  }
+
+  &_left:hover {
+    color: black;
+  }
+
+  &_left::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0%;
+    height: 3px;
+    background: black;
+    transition: 0.3s;
+    transform: scale(0,1);
+    transform-origin: center top;
+  }
+
+  &_left:hover::after {
+    transform: scale(1,1);
+  }
+
+  &_ttl {
+    font-size: 90px;
+    text-shadow: 10px 10px 10px white;
+  }
+
+  &_txt {
+    font-size: 50px;
+    text-shadow: 10px 10px 10px white;
+  }
+
+  &_right {
+    position: relative;
+    width: 70%;
+    height: auto;
+    z-index: 1;
+    margin-left: 23%;
+  }
+
+  &_right:hover {
+    opacity: 0.7;
+  }
+
+  &_right2 {
+    position: absolute;
+    margin-right: 7%;
+    margin-top: 15%;
+    z-index: 2;
+    right: 0;
+  }
+
+  &_right2:hover {
+    color: black;
+  }
+
+  &_right2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0%;
+    height: 3px;
+    background: black;
+    transition: 0.3s;
+    transform: scale(0,1);
+    transform-origin: center top;
+  }
+
+  &_right2:hover::after {
+    transform: scale(1,1);
+  }
+
+  &_ttl {
+    font-size: 90px;
+    text-shadow: 10px 10px 10px white;
+  }
+
+  &_txt2 {
+    font-size: 50px;
+    text-shadow: 10px 10px 10px white;
+    float: right;
+  }
+
+  &_left2 {
+    position: relative;
+    width: 70%;
+    height: auto;
+    float: left;
+    z-index: 1;
+    margin-left: 7%;
+  }
+
+  &_left2:hover {
+    opacity: 0.7;
+  }
+}
+
+
+
+footer {
+  padding-top: 25%;
+  padding-bottom: 100px;
+  z-index: 10;
+}
+
+.footer_txt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  vertical-align: bottom;
+  position: absolute;
+}
+
+@media screen and (max-width: 768px){
+
+  .header_all {
+    margin-top: 2%;
+  }
+
+  .blog {
+
+    width: 80%;
+    margin: 0 auto;
+
+    &_title {
+      font-size: 70px;
+    }
+
+    &_ttl {
+    font-size: 25px;
+    text-shadow: 10px 10px 10px white;
+  }
+
+  &_txt {
+    font-size: 15px;
+  }
+
+  &_txt2 {
+    font-size: 15px;
+  }
+  }
+}
